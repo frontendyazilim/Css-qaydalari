@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: teal;
+}
+.cont{
+    position: relative;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    top: 0;
+    width: 72%;
+    height: 30px;
+}
+.one::before{
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 0%;
+    height: 1px;
+    transition: 1s;
+    bottom: 0;
+    left: 0;
+}
+.one:hover::before{
+    width: 105%;
+    transform-origin: left;
+}
+.one::after{
+    content: 'first-child';
+    position: absolute;
+    left: 0;
+    font-family: Georgia, Times, serif;
+    font-style: normal;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.one span{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17px;
+    height: 17px;
+    background-color: #999;
+    border-radius: 2px;
+    color: white;
+    left: 120px;
+    font-size: 13px;
+    transform: translateX(calc(40px*var(--x)));
+}
+.one:hover span:first-child{
+    background-color: red;
+    transition: 1s;
+}
+.two{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    top: 50px;
+    width: 72%;
+    height: 30px;
+}
+.two::before{
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 0%;
+    height: 1px;
+    transition: 1s;
+    bottom: 0;
+    left: 0;
+}
+.two:hover::before{
+    width: 105%;
+    transform-origin: left;
+}
+.two::after{
+    content: 'last-child';
+    position: absolute;
+    left: 0;
+    font-family: Georgia, Times, serif;
+    font-style: normal;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.two span{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17px;
+    height: 17px;
+    background-color: #999;
+    border-radius: 2px;
+    color: white;
+    left: 120px;
+    font-size: 13px;
+    transform: translateX(calc(40px*var(--x)));
+}
+.two:hover span:last-child{
+    background-color: red;
+    transition: 1s;
+}
+.three{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    top: 100px;
+    width: 72%;
+    height: 30px;
+}
+.three::before{
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 0%;
+    height: 1px;
+    transition: 1s;
+    bottom: 0;
+    left: 0;
+}
+.three:hover::before{
+    width: 105%;
+    transform-origin: left;
+}
+.three::after{
+    content: 'nth-child(odd)';
+    position: absolute;
+    left: 0;
+    font-family: Georgia, Times, serif;
+    font-style: normal;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.three span{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17px;
+    height: 17px;
+    background-color: #999;
+    border-radius: 2px;
+    color: white;
+    left: 120px;
+    font-size: 13px;
+    transform: translateX(calc(40px*var(--x)));
+}
+.three:hover span:nth-child(odd){
+    background-color: red;
+    transition: 1s;
+}
+.four{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    top: 150px;
+    width: 72%;
+    height: 30px;
+}
+.four::before{
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 0%;
+    height: 1px;
+    transition: 1s;
+    bottom: 0;
+    left: 0;
+}
+.four:hover::before{
+    width: 105%;
+    transform-origin: left;
+}
+.four::after{
+    content: 'nth-child(even)';
+    position: absolute;
+    left: 0;
+    font-family: Georgia, Times, serif;
+    font-style: normal;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.four span{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17px;
+    height: 17px;
+    background-color: #999;
+    border-radius: 2px;
+    color: white;
+    left: 120px;
+    font-size: 13px;
+    transform: translateX(calc(40px*var(--x)));
+}
+.four:hover span:nth-child(even){
+    background-color: red;
+    transition: 1s;
+}
+.five{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    top: 200px;
+    width: 72%;
+    height: 30px;
+}
+.five::before{
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 0%;
+    height: 1px;
+    transition: 1s;
+    bottom: 0;
+    left: 0;
+}
+.five:hover::before{
+    width: 105%;
+    transform-origin: left;
+}
+.five::after{
+    content: 'nth-child(n+4)';
+    position: absolute;
+    left: 0;
+    font-family: Georgia, Times, serif;
+    font-style: normal;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.five span{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17px;
+    height: 17px;
+    background-color: #999;
+    border-radius: 2px;
+    color: white;
+    left: 120px;
+    font-size: 13px;
+    transform: translateX(calc(40px*var(--x)));
+}
+.five:hover span:nth-child(n+4){
+    background-color: red;
+    transition: 1s;
+}
+.six{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    top: 250px;
+    width: 72%;
+    height: 30px;
+}
+.six::before{
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 0%;
+    height: 1px;
+    transition: 1s;
+    bottom: 0;
+    left: 0;
+}
+.six:hover::before{
+    width: 105%;
+    transform-origin: left;
+}
+.six::after{
+    content: 'nth-child(3n+1)';
+    position: absolute;
+    left: 0;
+    font-family: Georgia, Times, serif;
+    font-style: normal;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.six span{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17px;
+    height: 17px;
+    background-color: #999;
+    border-radius: 2px;
+    color: white;
+    left: 120px;
+    font-size: 13px;
+    transform: translateX(calc(40px*var(--x)));
+}
+.six:hover span:nth-child(3n+1){
+    background-color: red;
+    transition: 1s;
+}
